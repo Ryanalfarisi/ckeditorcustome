@@ -73,13 +73,15 @@ Editor.defaultConfig = {
 	toolbar: {
 		items: [
 			'insertTable',
+			'|',
 			'fontFamily',
 			'fontSize',
 			'fontColor',
+			'|',
 			'bold',
 			'italic',
+			'|',
 			'alignment',
-			'heading',
 			'|',
 			'numberedList',
 			'bulletedList',
@@ -88,10 +90,7 @@ Editor.defaultConfig = {
 			'outdent',
 			'indent',
 			'|',
-			'imageUpload',
-			'blockQuote',
-			'undo',
-			'redo'
+			'blockQuote'
 		]
 	},
 	language: 'en',
@@ -108,8 +107,8 @@ Editor.defaultConfig = {
 			'tableColumn',
 			'tableRow',
 			'mergeTableCells',
-			'tableCellProperties',
-			'tableProperties'
+			'tableProperties',
+			'tableCellProperties'
 		]
 	}
 };
