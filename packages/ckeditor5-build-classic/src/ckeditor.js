@@ -91,17 +91,10 @@ Editor.defaultConfig = {
 			'indent',
 			'|',
 			'blockQuote'
-		]
+		],
+		shouldNotGroupWhenFull: true
 	},
 	language: 'en',
-	image: {
-		toolbar: [
-			'imageTextAlternative',
-			'imageStyle:inline',
-			'imageStyle:block',
-			'imageStyle:side'
-		]
-	},
 	table: {
 		contentToolbar: [
 			'tableColumn',
