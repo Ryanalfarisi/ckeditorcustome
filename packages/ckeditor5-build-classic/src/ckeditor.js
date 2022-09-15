@@ -17,6 +17,7 @@ import Indent from '@ckeditor/ckeditor5-indent/src/indent.js';
 import IndentBlock from '@ckeditor/ckeditor5-indent/src/indentblock.js';
 import Italic from '@ckeditor/ckeditor5-basic-styles/src/italic.js';
 import Link from '@ckeditor/ckeditor5-link/src/link.js';
+import PageBreak from '@ckeditor/ckeditor5-page-break/src/pagebreak.js';
 import List from '@ckeditor/ckeditor5-list/src/list.js';
 import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph.js';
 import Table from '@ckeditor/ckeditor5-table/src/table.js';
@@ -42,6 +43,7 @@ Editor.builtinPlugins = [
 	Italic,
 	Link,
 	List,
+	PageBreak,
 	Paragraph,
 	Table,
 	TableToolbar,
@@ -71,6 +73,7 @@ Editor.defaultConfig = {
 			'outdent',
 			'indent',
 			'|',
+			'PageBreak',
 			'blockQuote'
 		]
 	},
