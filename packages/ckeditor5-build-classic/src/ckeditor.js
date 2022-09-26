@@ -22,6 +22,7 @@ import List from '@ckeditor/ckeditor5-list/src/list.js';
 import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph.js';
 import Table from '@ckeditor/ckeditor5-table/src/table.js';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar.js';
+import Code from '@ckeditor/ckeditor5-basic-styles/src/code.js';
 
 class Editor extends ClassicEditor {}
 
@@ -47,6 +48,7 @@ Editor.builtinPlugins = [
 	Paragraph,
 	Table,
 	TableToolbar,
+	Code
 ];
 
 // Editor configuration.
@@ -73,6 +75,7 @@ Editor.defaultConfig = {
 			'outdent',
 			'indent',
 			'|',
+			'code',
 			'PageBreak',
 			'blockQuote'
 		]
