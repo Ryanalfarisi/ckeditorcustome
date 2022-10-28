@@ -19,10 +19,17 @@ import Italic from '@ckeditor/ckeditor5-basic-styles/src/italic.js';
 import Link from '@ckeditor/ckeditor5-link/src/link.js';
 import PageBreak from '@ckeditor/ckeditor5-page-break/src/pagebreak.js';
 import List from '@ckeditor/ckeditor5-list/src/list.js';
+import ListProperties from '@ckeditor/ckeditor5-list/src/listproperties.js';
 import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph.js';
 import Table from '@ckeditor/ckeditor5-table/src/table.js';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar.js';
 import Code from '@ckeditor/ckeditor5-basic-styles/src/code.js';
+import Image from '@ckeditor/ckeditor5-image/src/image.js';
+import ImageCaption from '@ckeditor/ckeditor5-image/src/imagecaption.js';
+import ImageStyle from '@ckeditor/ckeditor5-image/src/imagestyle.js';
+import ImageToolbar from '@ckeditor/ckeditor5-image/src/imagetoolbar.js';
+import ImageUpload from '@ckeditor/ckeditor5-image/src/imageupload.js';
+import Base64UploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/base64uploadadapter.js';
 
 class Editor extends ClassicEditor {}
 
@@ -38,7 +45,6 @@ Editor.builtinPlugins = [
 	FontFamily,
 	FontSize,
 	Heading,
-	Image,
 	Indent,
 	IndentBlock,
 	Italic,
@@ -48,7 +54,14 @@ Editor.builtinPlugins = [
 	Paragraph,
 	Table,
 	TableToolbar,
-	Code
+	Code,
+	Image,
+	ImageCaption,
+	ImageStyle,
+	ImageUpload,
+	ImageToolbar,
+	Base64UploadAdapter,
+	ListProperties
 ];
 
 // Editor configuration.
@@ -68,6 +81,7 @@ Editor.defaultConfig = {
 			'|',
 			'alignment',
 			'|',
+			'imageUpload',
 			'bulletedList',
 			'numberedList',
 			'link',
@@ -78,6 +92,21 @@ Editor.defaultConfig = {
 			'code',
 			'PageBreak',
 			'blockQuote'
+		]
+	},
+	list: {
+		properties: {
+			styles: true,
+			startIndex: true,
+			reversed: true
+		}
+	},
+	image: {
+		toolbar: [
+			'imageTextAlternative',
+			'imageStyle:inline',
+			'imageStyle:block',
+			'imageStyle:side'
 		]
 	},
 	language: 'en',
