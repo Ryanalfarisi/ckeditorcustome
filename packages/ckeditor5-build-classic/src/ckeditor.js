@@ -29,6 +29,7 @@ import ImageCaption from '@ckeditor/ckeditor5-image/src/imagecaption.js';
 import ImageStyle from '@ckeditor/ckeditor5-image/src/imagestyle.js';
 import ImageToolbar from '@ckeditor/ckeditor5-image/src/imagetoolbar.js';
 import ImageUpload from '@ckeditor/ckeditor5-image/src/imageupload.js';
+import ImageResize from '@ckeditor/ckeditor5-image/src/imageresize.js';
 import Base64UploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/base64uploadadapter.js';
 
 class Editor extends ClassicEditor {}
@@ -60,6 +61,7 @@ Editor.builtinPlugins = [
 	ImageStyle,
 	ImageUpload,
 	ImageToolbar,
+	ImageResize,
 	Base64UploadAdapter,
 	ListProperties
 ];
